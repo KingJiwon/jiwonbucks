@@ -10,7 +10,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
-  height: 3000px;
 }
 
 a {
@@ -48,6 +47,57 @@ img {
 .btn--light-green:hover {
   background-color: #076443;
   border-color: black;
+  color: white;
+  text-decoration: underline;
+}
+
+.btn--brown {
+  border-color: #633510;
+  color: #633510;
+  transition: 0.6s;
+}
+
+.btn--brown:hover {
+  background-color: #633510;
+  color: white;
+  text-decoration: underline;
+}
+
+.btn--gold {
+  border-color: #966932;
+  color: #966932;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn--gold:hover {
+  background-color: #966932;
+  color: white;
+  text-decoration: underline;
+}
+
+.btn--white {
+  border-color: #fff;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn--white:hover {
+  background-color: #fff;
+  color: black;
+  text-decoration: underline;
+}
+
+.btn--black {
+  border-color: #000;
+  color: #000;
+  transition: border-color color background-color text-decoration 0.6s;
+  cursor: pointer;
+}
+
+.btn--black:hover {
+  background-color: #000;
   color: white;
   text-decoration: underline;
 }
@@ -540,4 +590,323 @@ header .badges .badge img {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/* ELSALVADOR */
+.elsalvador {
+  position: relative;
+  height: 500px;
+  background-image: url("../images/elsalvador_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.elsalvador .inner img.elsalvador_item {
+  position: absolute;
+  width: 310px;
+  height: 440px;
+  left: 120px;
+  top: 50px;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.elsalvador .inner .elsalvador__contents {
+  position: absolute;
+  left: 560px;
+  top: 180px;
+  transform: translateX(900px);
+  transition: 2.5s;
+  opacity: 0;
+}
+
+.elsalvador:hover .inner .elsalvador__contents,
+.elsalvador:hover .inner img.elsalvador_item {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.elsalvador .inner .elsalvador__contents .btn.btn--brown {
+  margin-top: 30px;
+}
+
+/* ETHIOPIA */
+
+.ethiopia {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/ethiopia_bg.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.ethiopia .inner {
+  height: 100%;
+}
+
+.ethiopia::before {
+  content: "";
+  position: absolute;
+  width: 425px;
+  height: 404px;
+  background-image: url("../images/ethiopia_before.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: -50px;
+  opacity: 0;
+}
+
+.ethiopia::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 400px;
+  background-image: url("../images/ethiopia_after.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: -80px;
+  opacity: 0;
+}
+
+.ethiopia:hover::before,
+.ethiopia:hover::after {
+  transition: 1.5s;
+  opacity: 1;
+}
+
+.ethiopia .inner .ethiopia__contents {
+  position: absolute;
+  width: 496px;
+  top: 120px;
+}
+
+.ethiopia .inner .ethiopia__item {
+  position: absolute;
+  right: -400px;
+  opacity: 0;
+}
+
+.ethiopia:hover .inner .ethiopia__item {
+  transition: 1.5s;
+  transition-delay: 0.8s;
+  opacity: 1;
+}
+
+.ethiopia .inner .btn.btn--gold {
+  position: absolute;
+  box-sizing: border-box;
+  text-align: center;
+  width: 118px;
+  top: 285px;
+  left: 260px;
+}
+
+/* FAVORITE */
+
+.favorite {
+  position: relative;
+  height: 800px;
+  background-image: url("../images/fav_bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.favorite .inner .favorite__text-1 {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.favorite:hover .inner .favorite__text-1 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.favorite .inner .favorite__text-2 {
+  position: absolute;
+  top: 370px;
+  left: 0;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.favorite:hover .inner .favorite__text-2 {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.favorite .inner .btn.btn--white {
+  position: absolute;
+  top: 580px;
+  left: 238px;
+  width: 125px;
+  height: 38px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+  transition: 1.8s;
+}
+
+.favorite:hover .inner .btn.btn--white {
+  opacity: 1;
+}
+
+.favorite .inner .favorite__img {
+  position: absolute;
+  top: 100px;
+  right: -253px;
+  width: 912px;
+  height: 575px;
+}
+
+/* MAGAZINE */
+
+.magazine {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/magazine_bg.png");
+  background-position: -260px 45px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.magazine .inner .magazine__text {
+  position: absolute;
+  top: 135px;
+  left: 60px;
+}
+
+.magazine .inner .btn.btn--black {
+  position: absolute;
+  top: 270px;
+  left: 295px;
+}
+
+.magazine .inner .magazine__img {
+  position: absolute;
+  width: 348;
+  right: 50px;
+  top: 0;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.magazine:hover .inner .magazine__img {
+  opacity: 1;
+}
+
+/* STORE */
+
+.store {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/store_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.store .inner {
+  height: 400px;
+}
+
+.store .inner .store__text-1 {
+  position: absolute;
+  width: 385px;
+  top: 100px;
+  right: 50px;
+  transform: translateX(800px);
+  transition: 1.5s;
+}
+
+.store .inner .store__text-2 {
+  position: absolute;
+  width: 366px;
+  top: 170px;
+  right: 69px;
+  transform: translateX(800px);
+  transition: 2s;
+}
+
+.store .inner .store__text-1,
+.store .inner .store__text-2,
+.store .inner .btn.btn--black {
+  opacity: 0;
+}
+
+.store:hover .inner .store__text-1,
+.store:hover .inner .store__text-2,
+.store:hover .inner .btn.btn--black {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.store .inner .store__img-1 {
+  position: absolute;
+  width: 366px;
+  top: 0;
+  left: 70px;
+}
+
+.store .inner .store__img-2 {
+  position: absolute;
+  width: 228px;
+  top: 150px;
+  left: 300px;
+}
+
+.store .inner .store__img-3 {
+  position: absolute;
+  width: 348px;
+  top: -60px;
+  left: 430px;
+}
+
+.store .inner .store__img-4 {
+  position: absolute;
+  width: 230px;
+  right: -70px;
+  bottom: 0;
+}
+
+.store .inner .store__img-1,
+.store .inner .store__img-2,
+.store .inner .store__img-3,
+.store .inner .store__img-4 {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.store:hover .inner .store__img-1,
+.store:hover .inner .store__img-2,
+.store:hover .inner .store__img-3,
+.store:hover .inner .store__img-4 {
+  opacity: 1;
+}
+
+.store .inner .btn.btn--black {
+  position: absolute;
+  top: 290px;
+  right: 330px;
+  width: 104px;
+  height: 37px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: translateX(800px);
+  transition: transform 2.5s;
 }
