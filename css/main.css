@@ -179,19 +179,18 @@ header .inner .sub-menu .search > input {
   transition: width 0.4s;
 }
 
-header .inner .sub-menu .search > input:focus {
+header .inner .sub-menu .search > input.search-trans {
   width: 190px;
 }
 
 header .inner .sub-menu .search > .material-symbols-outlined {
   position: absolute;
-  right: 0;
-  left: 0;
+  height: 24px;
+  margin: auto;
   top: 0;
   bottom: 0;
-  margin: auto;
-  width: 24px;
-  height: 24px;
+  right: 3px;
+  z-index: 999999;
 }
 
 /* MAIN_MENU */
